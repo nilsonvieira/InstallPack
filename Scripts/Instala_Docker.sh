@@ -46,9 +46,11 @@ DockerUbuntu(){
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  focal stable"
 }
 
-if [[ $_DISTRO == 1]]; then
+if [ $_DISTRO == 1 ]
+then
     DockerDebian
-elif [[$_DISTRO == 2]]
+elif [ $_DISTRO == 2 ]
+then
     DockerUbuntu
 else 
     echo "Apenas Disponível para:
